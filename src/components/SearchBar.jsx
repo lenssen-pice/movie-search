@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./SearchBar.css"
 
 function SearchBar({ onSearch }) {
   const [query, SetQuery] = useState("");
@@ -14,11 +15,6 @@ function SearchBar({ onSearch }) {
   };
 
   return (
-
-
-
-
-    
     <div className="search-bar">
       <input
         type="text"

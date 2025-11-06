@@ -1,13 +1,16 @@
 import React from "react";
+import "./MovieCard.css";
+import placeholder from "../assets/placeholder.jpg";
 
-const MovieCard = ({ movie, onclick }) => {
+const MovieCard = ({ movie, onClick }) => {
+  const poster =
+    movie.Poster && movie.Poster != "N/A" ? movie.Poster : placeholder;
+
   return (
-    <div className="movie-card" onclick={onclick}>
-      {movie.poster && movie.poster !== "N/A" && (
-        <img src="{movie.poster}" alt="movie.title" />
-      )}
-      <h3>movie.title</h3>
-      <p>movie.year</p>
+    <div className="movie-card" onClick={onClick}>
+      <h3>{movie.Title}</h3>
+      <p>{movie.Year}</p>
+      <img src={poster} />
     </div>
   );
 };

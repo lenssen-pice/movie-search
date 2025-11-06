@@ -1,11 +1,13 @@
-import './App.css'
+import "./App.css";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div>
-      {/* Your Movie Search app will go here */}
+    <div className="app">
+      <h1>Movie Search</h1>
+      <Home />
     </div>
   );
 }
 
-export default App
+export default App;

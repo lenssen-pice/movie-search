@@ -1,0 +1,97 @@
+.movie-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+  background-color: #444;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+.title {
+  width: 80%;
+}
+
+.year {
+  width: 30%;
+}
+
+.genre {
+  width: 40%;
+}
+
+.director {
+  width: 50%;
+}
+
+.plot {
+  width: 65%;
+}
+
+.shimmer {
+  padding: 5px;
+  width: 45%;
+  height: 120px;
+  margin: 10px auto;
+  background: #ffffff;
+}
+
+.stroke {
+  height: 15px;
+  background: #777;
+  margin-top: 20px;
+}
+
+.wrapper {
+  width: 0px;
+  animation: fullView 0.5s forwards linear;
+}
+
+@keyframes fullView {
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes shimmer {
+  from {
+    background-position: -1000px 0;
+  }
+  to {
+    background-position: 1000px 0;
+  }
+}
