@@ -27,3 +27,6 @@
 .search-bar button:hover {
   background-color: #444;
 }
+
+
+/*  in css files try to use rem / em    px should be used rarely as they are fixed not responsive */
